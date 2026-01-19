@@ -1,15 +1,5 @@
 main:
-  - title: Online Statistical Inference of Constant Sample-averaged Q-Learning
-    authors: Saunak Kumar Panda, Tong Li, Ruiqi Liu, Yisha Xiang
-    conference_short: RLSW
-    conference: Reinforcement Learning Safety Workshop (RLSW), 2024.
-    pdf: https://openreview.net/pdf?id=bKXRTxxmey
-    code: ""
-    bibtex: https://openreview.net/forum?id=bKXRTxxmey
-    image: ""
-    notes: Poster
-
-  - title: Dynamic resource matching in manufacturing using deep reinforcement learning
+    - title: Dynamic resource matching in manufacturing using deep reinforcement learning
     authors: Saunak Kumar Panda, Yisha Xiang, Ruiqi Liu
     conference_short: EJOR
     conference: European Journal of Operational Research, 2024.
@@ -19,7 +9,7 @@ main:
     image: ""
     notes: Journal article
 
-  - title: Asymptotic Analysis of Sample-averaged Q-learning
+    - title: Asymptotic Analysis of Sample-averaged Q-learning
     authors: Saunak Kumar Panda, Ruiqi Liu, Yisha Xiang
     conference_short: TIT
     conference: IEEE Transactions on Information Theory, 2025.
@@ -28,3 +18,13 @@ main:
     bibtex: ""
     image: ""
     notes: Journal article
+    
+    - title: Online Statistical Inference of Constant Sample-averaged Q-Learning
+    authors: Saunak Kumar Panda, Tong Li, Ruiqi Liu, Yisha Xiang
+    conference_short: RLSW
+    conference: Reinforcement Learning Safety Workshop (RLSW), 2024.
+    pdf: https://openreview.net/pdf?id=bKXRTxxmey
+    code: ""
+    bibtex: https://openreview.net/forum?id=bKXRTxxmey
+    image: ""
+    notes: Poster
