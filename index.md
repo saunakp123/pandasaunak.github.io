@@ -7,12 +7,6 @@ layout: homepage
 **Postdoctoral Researcher (Human-Centered AI) • PhD in Industrial Engineering (Operations Research & AI)**  
 University of Houston
 
-Email: [spanda@uh.edu](mailto:spanda@bauer.uh.edu) •
-[CV](assets/cv.pdf) •
-[Google Scholar](https://scholar.google.com/citations?user=Ldiyc0IAAAAJ&hl=en) •
-[LinkedIn](https://www.linkedin.com/in/saunak-kumar-panda/) •
-[GitHub](https://github.com/saunakp123)
-
 ---
 
 ## About
@@ -69,11 +63,4 @@ RL-based decision policies for dynamic matching and resource allocation, with ap
 ## Teaching & Service
 - President, INFORMS UH Student Chapter (organized seminars, events, and industry/academic engagement).  
 - Student board member, IISE QCRE (2 years).  
-- Reviewer / community contributions in RL safety and related venues (as applicable).
-
----
-
-## Contact
-Email: [spanda@uh.edu](mailto:spanda@bauer.uh.edu)  
-GitHub: https://github.com/saunakp123  
-LinkedIn: https://www.linkedin.com/in/saunak-kumar-panda/
+- Reviewer / community contributions in RL safety and related venues.
