@@ -1,22 +1,26 @@
-# Basic Information 
-title: Your Name
-position: Ph.D. Student
-affiliation: Your Affiliation
-email: yourname (at) example.edu
+title: "Saunak Kumar Panda"
+description: "PhD (Industrial Engineering) | Postdoctoral Researcher | Reinforcement Learning • Optimization • Statistical Inference"
+url: "https://saunakp123.github.io"
+baseurl: ""
 
-# Search Engine Optimization (SEO)
-# The following information is used to improve the website traffic from search engines, e.g., Google.
-keywords: minimal light
-description: The Minimal Light is a simple and elegant jekyll theme for academic personal homepage.
-canonical: https://minimal-light-theme.yliu.me/
+# --- Identity / contact ---
+email: "spanda@bauer.uh.edu"
+author: "Saunak Kumar Panda"
 
-# Links 
-# If you don't need one of them, you may delete the corresponding line.
-google_scholar: https://scholar.google.com/
-cv_link: assets/files/curriculum_vitae.pdf
-github_link: https://github.com/
-linkedin: https://www.linkedin.com/
-twitter: https://twitter.com/
+# --- Social links (update handles/URLs) ---
+github_username: "saunakp123"
+linkedin_username: "saunak-kumar-panda"   # e.g., saunak-panda
+google_scholar: "Ldiyc0IAAAAJ&hl"         # if the theme supports it
+# twitter_username: "YOUR_TWITTER"          # optional
+
+# --- Site settings ---
+markdown: kramdown
+kramdown:
+  input: GFM
+  hard_wrap: false
+
+# If your theme repo already had plugins/theme lines, keep them as-is below this point.
+# (Do not delete remote_theme / plugins sections from the theme unless you know what you're doing.)
 
 # Images (e.g., your profile picture and your website's favicon) 
 # "favicon" and "favicon_dark" are used for the light and dark modes, respectively. 
