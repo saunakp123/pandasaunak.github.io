@@ -6,6 +6,7 @@ main:
     conference: European Journal of Operational Research, 318(2), 408–423, 2024.
     pdf: https://doi.org/10.1016/j.ejor.2024.01.030
     bibtex: https://ideas.repec.org/a/eee/ejores/v318y2024i2p408-423.html
+    image: ./assets/img/1stpaper.png
     notes: Journal Article
 
   - title: Asymptotic Analysis of Sample-Averaged Q-Learning
@@ -14,6 +15,7 @@ main:
     conference: IEEE Transactions on Information Theory, 71(7), 5601–5619, 2025.
     pdf: https://ieeexplore.ieee.org/document/11002555
     bibtex: https://ieeexplore.ieee.org/document/11002555
+    image: ./assets/img/2ndpaper.png
     notes: Journal Article
 
   - title: Online Statistical Inference of Constant Sample-averaged Q-Learning
@@ -22,4 +24,5 @@ main:
     conference: Reinforcement Learning Safety Workshop (RLSW), 2024.
     pdf: https://openreview.net/pdf?id=bKXRTxxmey
     bibtex: https://openreview.net/forum?id=bKXRTxxmey
+    image: ./assets/img/2ndpaperworkshop.png
     notes: Workshop Paper
