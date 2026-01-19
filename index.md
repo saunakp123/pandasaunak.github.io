@@ -25,9 +25,10 @@ My methodological foundation remains in **risk‑sensitive and variance‑aware 
 ---
 
 ## News
-- **2025–Present:** Postdoctoral Researcher (Human-Centered AI), University of Houston.  
-- **2024:** Paper accepted in *European Journal of Operational Research* on dynamic resource matching using deep RL.  
-- **2024:** Presented work at the Reinforcement Learning Safety Workshop (RLC).
+- **2025–Present:** Postdoctoral Researcher (Human-Centered AI), University of Houston.
+- **May 2025:** Paper **Asymptotic Analysis of Sample-averaged Q-learning** accepted in *IEEE Transactions on Information Theory*.
+- **Oct 2024:** Paper **Dynamic resource matching in manufacturing using deep reinforcement learning** accepted in *European Journal of Operational Research*.  
+- **Aug 2024:** Presented **Online Statistical Inference of Constant Sample-averaged Q-Learning** at the Reinforcement Learning Safety Workshop (RLC).
 
 ---
 {% include_relative _includes/publications.md %}
