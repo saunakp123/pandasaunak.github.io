@@ -17,8 +17,15 @@ Email: [spanda@uh.edu](mailto:spanda@bauer.uh.edu) •
 ---
 
 ## About
-I am a Postdoctoral Researcher working on reliable and interpretable AI for decision support, with a focus on reinforcement learning (RL), optimization, and statistical inference.  
-My research develops **risk-sensitive and variance-aware RL** methods (e.g., empirical variance penalization, sample-averaged Q-learning with asymptotic inference) and applies them to complex resource allocation and sequential decision-making problems.
+I am a Postdoctoral Researcher working at the intersection of reinforcement learning, large language models, and human-centered AI.  My work combines theory and practice to build decision-making systems that are reliable, interpretable, and incentive-aware.
+
+**Auction and Learning Dynamics:** I study how RL agents behave in repeated auctions and strategic markets, analysing overbidding, collusion-like dynamics, and continuation-value effects.
+
+**Human-Centered ABA:** I develop AI‑assisted decision‑support systems for Applied Behavior Analysis, integrating assessments (ABAS‑3, VB‑MAPP, SRS‑2) into interpretable feature representations aligned with practitioner expertise.
+
+**AI Compliance:** I’m building LLM‑assisted compliance frameworks that translate regulatory text into machine‑verifiable rules (using Lean), including schema extraction and formal validation pipelines for financial disclosures.
+
+My methodological foundation remains in **risk‑sensitive and variance‑aware RL**, including sample‑averaged Q‑learning, empirical variance penalization, and asymptotic inference.  I aim to bridge theory and practice across markets, regulation, and behavioral interventions.
 
 **Research interests:** Reinforcement Learning • Risk-sensitive RL • Statistical Inference • Optimization • Sequential Decision-Making • Human-centered AI
 
