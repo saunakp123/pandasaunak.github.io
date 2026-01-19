@@ -13,11 +13,11 @@ linkedin_username: "saunak-kumar-panda"   # e.g., saunak-panda
 google_scholar: "Ldiyc0IAAAAJ&hl"         # if the theme supports it
 # twitter_username: "YOUR_TWITTER"          # optional
 
-# --- Site settings ---
-markdown: kramdown
-kramdown:
-  input: GFM
-  hard_wrap: false
+# # --- Site settings ---
+# markdown: kramdown
+# kramdown:
+#   input: GFM
+#   hard_wrap: false
 
 # If your theme repo already had plugins/theme lines, keep them as-is below this point.
 # (Do not delete remote_theme / plugins sections from the theme unless you know what you're doing.)
