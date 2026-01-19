@@ -1,17 +1,26 @@
 title: "Saunak Kumar Panda"
+position: Postdoctoral Scholar
+affiliation: C. T. Bauer College of Business, University of Houston
 description: "PhD (Industrial Engineering) | Postdoctoral Researcher | Reinforcement Learning • Optimization • Statistical Inference"
 url: "https://saunakp123.github.io"
 baseurl: "/pandasaunak.github.io"
+
+# Basic Information 
 
 # --- Identity / contact ---
 email: "spanda@bauer.uh.edu"
 author: "Saunak Kumar Panda"
 
 # --- Social links (update handles/URLs) ---
-github_username: "saunakp123"
-linkedin_username: "saunak-kumar-panda"   # e.g., saunak-panda
-google_scholar: "Ldiyc0IAAAAJ&hl"         # if the theme supports it
+# github_username: "saunakp123"
+# linkedin_username: "saunak-kumar-panda"   # e.g., saunak-panda
+google_scholar: "https://scholar.google.com/Ldiyc0IAAAAJ&hl"         # if the theme supports it
 # twitter_username: "YOUR_TWITTER"          # optional
+# google_scholar: https://scholar.google.com/
+cv_link: assets/files/curriculum_vitae.pdf
+github_link: https://github.com/saunakp123
+linkedin: https://www.linkedin.com/in/saunak-kumar-panda
+# twitter: https://twitter.com/
 
 # # --- Site settings ---
 # markdown: kramdown
