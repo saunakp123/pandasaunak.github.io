@@ -4,8 +4,8 @@ main:
     authors: <strong>Saunak Kumar Panda</strong>, Ruiqi Liu, Yisha Xiang
     conference_short: EJOR
     conference: European Journal of Operational Research, 318(2), 408–423, 2024.
-    pdf: https://doi.org/10.1016/j.ejor.2024.01.030
-    bibtex: https://ideas.repec.org/a/eee/ejores/v318y2024i2p408-423.html
+    pdf: https://doi.org/10.1016/j.ejor.2024.05.027
+    bibtex: https://doi.org/10.1016/j.ejor.2024.05.027
     image: ./assets/img/1stpaper.png
     notes: Journal Article
 
