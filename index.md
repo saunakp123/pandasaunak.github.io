@@ -1,6 +1,5 @@
 ---
 layout: homepage
-title: Home
 ---
 
 # Saunak Kumar Panda
