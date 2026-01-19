@@ -1,30 +1,25 @@
 main:
-    - title: Dynamic resource matching in manufacturing using deep reinforcement learning
-    authors: Saunak Kumar Panda, Yisha Xiang, Ruiqi Liu
-    conference_short: EJOR
-    conference: European Journal of Operational Research, 2024.
-    pdf: https://doi.org/10.1016/j.ejor.2024.05.027
-    code: ""
-    bibtex: ""
-    image: ""
-    notes: Journal article
 
-    - title: Asymptotic Analysis of Sample-averaged Q-learning
-    authors: Saunak Kumar Panda, Ruiqi Liu, Yisha Xiang
+  - title: Dynamic resource matching in manufacturing using deep reinforcement learning
+    authors: <strong>Saunak Kumar Panda</strong>, Ruiqi Liu, Yisha Xiang
+    conference_short: EJOR
+    conference: European Journal of Operational Research, 318(2), 408–423, 2024.
+    pdf: https://doi.org/10.1016/j.ejor.2024.01.030
+    bibtex: https://ideas.repec.org/a/eee/ejores/v318y2024i2p408-423.html
+    notes: Journal Article
+
+  - title: Asymptotic Analysis of Sample-Averaged Q-Learning
+    authors: <strong>Saunak Kumar Panda</strong>, Ruiqi Liu, Yisha Xiang
     conference_short: TIT
-    conference: IEEE Transactions on Information Theory, 2025.
-    pdf: https://doi.org/10.1109/TIT.2025.3569421
-    code: ""
-    bibtex: ""
-    image: ""
-    notes: Journal article
-    
-    - title: Online Statistical Inference of Constant Sample-averaged Q-Learning
-    authors: Saunak Kumar Panda, Tong Li, Ruiqi Liu, Yisha Xiang
+    conference: IEEE Transactions on Information Theory, 71(7), 5601–5619, 2025.
+    pdf: https://ieeexplore.ieee.org/document/11002555
+    bibtex: https://ieeexplore.ieee.org/document/11002555
+    notes: Journal Article
+
+  - title: Online Statistical Inference of Constant Sample-averaged Q-Learning
+    authors: <strong>Saunak Kumar Panda</strong>, Tong Li, Yisha Xiang
     conference_short: RLSW
     conference: Reinforcement Learning Safety Workshop (RLSW), 2024.
     pdf: https://openreview.net/pdf?id=bKXRTxxmey
-    code: ""
     bibtex: https://openreview.net/forum?id=bKXRTxxmey
-    image: ""
-    notes: Poster
+    notes: Workshop Paper
