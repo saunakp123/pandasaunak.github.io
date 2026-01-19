@@ -36,6 +36,7 @@ My methodological foundation remains in **risk‑sensitive and variance‑aware 
 - **2024:** Presented work at the Reinforcement Learning Safety Workshop (RLC).
 
 ---
+{% include_relative _includes/publications.md %}
 
 ## Publications
 ### Journal
