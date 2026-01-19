@@ -32,23 +32,6 @@ My methodological foundation remains in **risk‑sensitive and variance‑aware 
 ---
 {% include_relative _includes/publications.md %}
 
-## Publications
-### Journal
-- **Dynamic resource matching in manufacturing using deep reinforcement learning**, Saunak Kumar Panda, et al.  
-  *European Journal of Operational Research*, 2024.  
-  [[Link]](YOUR_EJOR_PAPER_LINK)
-
-### Workshop / Under Review
-- **Online Statistical Inference of Sample-averaged Q-learning**, Saunak Kumar Panda, Tong Li, Yisha Xiang.  
-  Under review (IEEE Transactions on Information Theory).  
-  [[OpenReview]](https://openreview.net/forum?id=bKXRTxxmey)
-
-- **Variance-Penalized Reinforcement Learning via Empirical Variance Estimation**, Saunak Kumar Panda, et al.  
-  (Working paper / submission).  
-  [[PDF]](YOUR_PDF_LINK) [[Code]](YOUR_CODE_LINK)
-
-> For a full list, see [Google Scholar](https://scholar.google.com/citations?user=Ldiyc0IAAAAJ&hl=en).
-
 ---
 
 ## Projects
