@@ -25,7 +25,7 @@ My methodological foundation remains in **risk‑sensitive and variance‑aware 
 ---
 
 ## News
-- **2025–Present:** Postdoctoral Researcher at Human-Centered AI Institute, C.T. Bauer College of Business, University of Houston.
+- **Sep 2025–Present:** Postdoctoral Researcher at Human-Centered AI Institute, C.T. Bauer College of Business, University of Houston.
 - **May 2025:** Paper **Asymptotic Analysis of Sample-averaged Q-learning** accepted in *IEEE Transactions on Information Theory*.
 - **Oct 2024:** Paper **Dynamic resource matching in manufacturing using deep reinforcement learning** accepted in *European Journal of Operational Research*.  
 - **Aug 2024:** Presented **Online Statistical Inference of Constant Sample-averaged Q-Learning** at the Reinforcement Learning Safety Workshop (RLC).
