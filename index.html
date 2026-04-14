@@ -1,0 +1,1092 @@
+---
+layout: null
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Saunak Kumar Panda</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;1,400&family=DM+Mono:wght@400;500&family=Instrument+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --ink: #1a1a18;
+    --ink-2: #3d3d38;
+    --ink-3: #6b6b64;
+    --ink-4: #9e9e95;
+    --paper: #f7f5f0;
+    --paper-2: #efede6;
+    --paper-3: #e5e2d8;
+    --rule: rgba(26,26,24,0.1);
+    --accent: #1a3a5c;
+    --accent-2: #c8451a;
+    --accent-light: #e8f0f8;
+    --mono: 'DM Mono', monospace;
+    --serif: 'EB Garamond', Georgia, serif;
+    --sans: 'Instrument Sans', sans-serif;
+  }
+
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    font-family: var(--serif);
+    background: var(--paper);
+    color: var(--ink);
+    line-height: 1.7;
+    font-size: 17px;
+  }
+
+  /* ── LAYOUT ── */
+  .site-wrapper {
+    display: grid;
+    grid-template-columns: 240px 1fr;
+    min-height: 100vh;
+  }
+
+  /* ── SIDEBAR ── */
+  .sidebar {
+    position: sticky;
+    top: 0;
+    height: 100vh;
+    overflow-y: auto;
+    border-right: 1px solid var(--rule);
+    padding: 2.5rem 1.75rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    background: var(--paper);
+  }
+
+  .avatar-wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.75rem;
+  }
+
+  .avatar {
+    width: 88px;
+    height: 88px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid var(--paper-3);
+    display: block;
+  }
+
+  .sidebar-name {
+    font-family: var(--serif);
+    font-size: 1.1rem;
+    font-weight: 500;
+    line-height: 1.3;
+    color: var(--ink);
+  }
+
+  .sidebar-role {
+    font-family: var(--sans);
+    font-size: 0.7rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--ink-3);
+    line-height: 1.5;
+  }
+
+  .sidebar-nav {
+    display: flex;
+    flex-direction: column;
+    gap: 0.1rem;
+  }
+
+  .sidebar-nav a {
+    font-family: var(--sans);
+    font-size: 0.82rem;
+    color: var(--ink-3);
+    text-decoration: none;
+    padding: 0.3rem 0;
+    transition: color 0.15s;
+    border-bottom: none;
+  }
+
+  .sidebar-nav a:hover { color: var(--accent); }
+
+  .sidebar-links {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+    margin-top: auto;
+  }
+
+  .sidebar-link {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-family: var(--mono);
+    font-size: 0.7rem;
+    color: var(--ink-3);
+    text-decoration: none;
+    transition: color 0.15s;
+  }
+
+  .sidebar-link:hover { color: var(--accent); }
+
+  .sidebar-link svg {
+    width: 13px;
+    height: 13px;
+    flex-shrink: 0;
+    opacity: 0.6;
+  }
+
+  /* ── MAIN ── */
+  main {
+    padding: 3.5rem 3.5rem 5rem 4rem;
+    max-width: 780px;
+  }
+
+  section {
+    margin-bottom: 3.5rem;
+    opacity: 0;
+    transform: translateY(16px);
+    animation: fadein 0.5s ease forwards;
+  }
+
+  section:nth-child(1) { animation-delay: 0.05s; }
+  section:nth-child(2) { animation-delay: 0.12s; }
+  section:nth-child(3) { animation-delay: 0.19s; }
+  section:nth-child(4) { animation-delay: 0.26s; }
+  section:nth-child(5) { animation-delay: 0.33s; }
+  section:nth-child(6) { animation-delay: 0.40s; }
+  section:nth-child(7) { animation-delay: 0.47s; }
+
+  @keyframes fadein {
+    to { opacity: 1; transform: none; }
+  }
+
+  .section-label {
+    font-family: var(--mono);
+    font-size: 0.68rem;
+    font-weight: 500;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--ink-4);
+    margin-bottom: 1.25rem;
+    padding-bottom: 0.6rem;
+    border-bottom: 1px solid var(--rule);
+  }
+
+  /* ── ABOUT ── */
+  .about-lede {
+    font-size: 1.15rem;
+    line-height: 1.75;
+    color: var(--ink);
+    margin-bottom: 1rem;
+  }
+
+  .about-body {
+    font-size: 0.95rem;
+    color: var(--ink-2);
+    line-height: 1.8;
+    margin-bottom: 1rem;
+  }
+
+  .research-threads {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.75rem;
+    margin-top: 1.5rem;
+  }
+
+  .thread {
+    background: var(--paper-2);
+    border: 1px solid var(--rule);
+    border-radius: 6px;
+    padding: 0.9rem 1rem;
+  }
+
+  .thread-label {
+    font-family: var(--mono);
+    font-size: 0.65rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--accent);
+    margin-bottom: 0.3rem;
+    font-weight: 500;
+  }
+
+  .thread-label.orange { color: var(--accent-2); }
+  .thread-label.slate  { color: #4a6741; }
+  .thread-label.mauve  { color: #6b4a7a; }
+
+  .thread-title {
+    font-family: var(--sans);
+    font-size: 0.82rem;
+    font-weight: 600;
+    color: var(--ink);
+    margin-bottom: 0.25rem;
+  }
+
+  .thread-desc {
+    font-size: 0.8rem;
+    font-family: var(--sans);
+    color: var(--ink-3);
+    line-height: 1.5;
+  }
+
+  .interest-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem;
+    margin-top: 1.25rem;
+  }
+
+  .itag {
+    font-family: var(--mono);
+    font-size: 0.67rem;
+    color: var(--ink-3);
+    background: var(--paper-2);
+    border: 1px solid var(--rule);
+    border-radius: 3px;
+    padding: 2px 8px;
+    letter-spacing: 0.04em;
+  }
+
+  /* ── NEWS ── */
+  .news-list { display: flex; flex-direction: column; gap: 0.9rem; }
+
+  .news-item {
+    display: grid;
+    grid-template-columns: 80px 1fr;
+    gap: 1rem;
+    align-items: baseline;
+  }
+
+  .news-date {
+    font-family: var(--mono);
+    font-size: 0.68rem;
+    color: var(--ink-4);
+    padding-top: 2px;
+    white-space: nowrap;
+  }
+
+  .news-text {
+    font-family: var(--sans);
+    font-size: 0.85rem;
+    color: var(--ink-2);
+    line-height: 1.6;
+  }
+
+  .news-text strong { font-weight: 600; color: var(--ink); }
+  .news-text em { font-style: italic; }
+
+  .news-badge {
+    display: inline-block;
+    font-family: var(--mono);
+    font-size: 0.6rem;
+    background: var(--accent);
+    color: #fff;
+    border-radius: 2px;
+    padding: 1px 5px;
+    vertical-align: middle;
+    margin-left: 4px;
+    letter-spacing: 0.04em;
+  }
+
+  /* ── PUBLICATIONS ── */
+  .pub-list { display: flex; flex-direction: column; gap: 1.5rem; }
+
+  .pub-entry {
+    display: grid;
+    grid-template-columns: 56px 1fr;
+    gap: 1.25rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid var(--rule);
+  }
+
+  .pub-entry:last-child { border-bottom: none; padding-bottom: 0; }
+
+  .pub-venue-badge {
+    font-family: var(--mono);
+    font-size: 0.6rem;
+    font-weight: 500;
+    color: #fff;
+    background: var(--accent);
+    border-radius: 3px;
+    padding: 3px 5px;
+    text-align: center;
+    line-height: 1.3;
+    align-self: start;
+    margin-top: 3px;
+    letter-spacing: 0.04em;
+  }
+
+  .pub-venue-badge.orange { background: var(--accent-2); }
+  .pub-venue-badge.gray   { background: var(--ink-3); }
+
+  .pub-title {
+    font-family: var(--serif);
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--ink);
+    line-height: 1.4;
+    margin-bottom: 0.3rem;
+  }
+
+  .pub-authors {
+    font-family: var(--sans);
+    font-size: 0.8rem;
+    color: var(--ink-3);
+    margin-bottom: 0.25rem;
+  }
+
+  .pub-authors strong { color: var(--ink-2); font-weight: 600; }
+
+  .pub-journal {
+    font-family: var(--sans);
+    font-size: 0.78rem;
+    color: var(--ink-4);
+    font-style: italic;
+    margin-bottom: 0.5rem;
+  }
+
+  .pub-abstract {
+    font-family: var(--sans);
+    font-size: 0.8rem;
+    color: var(--ink-3);
+    line-height: 1.6;
+    margin-bottom: 0.6rem;
+    display: none;
+  }
+
+  .pub-abstract.open { display: block; }
+
+  .pub-links { display: flex; gap: 0.5rem; flex-wrap: wrap; align-items: center; }
+
+  .pub-link {
+    font-family: var(--mono);
+    font-size: 0.67rem;
+    color: var(--ink-3);
+    text-decoration: none;
+    border: 1px solid var(--rule);
+    border-radius: 3px;
+    padding: 2px 8px;
+    transition: all 0.15s;
+    background: transparent;
+    cursor: pointer;
+    letter-spacing: 0.04em;
+  }
+
+  .pub-link:hover {
+    color: var(--accent);
+    border-color: var(--accent);
+    background: var(--accent-light);
+  }
+
+  /* ── PROJECTS ── */
+  .projects-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+  }
+
+  .proj-card {
+    background: var(--paper);
+    border: 1px solid var(--rule);
+    border-radius: 7px;
+    padding: 1.1rem 1.2rem;
+    transition: border-color 0.2s, box-shadow 0.2s;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .proj-card::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    height: 2px;
+    background: var(--accent);
+    opacity: 0;
+    transition: opacity 0.2s;
+  }
+
+  .proj-card.orange::before { background: var(--accent-2); }
+  .proj-card.green::before  { background: #4a6741; }
+  .proj-card.mauve::before  { background: #6b4a7a; }
+
+  .proj-card:hover { border-color: var(--paper-3); box-shadow: 0 2px 12px rgba(0,0,0,0.06); }
+  .proj-card:hover::before { opacity: 1; }
+
+  .proj-header {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 0.5rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .proj-type {
+    font-family: var(--mono);
+    font-size: 0.62rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--accent);
+    font-weight: 500;
+  }
+
+  .proj-type.orange { color: var(--accent-2); }
+  .proj-type.green  { color: #4a6741; }
+  .proj-type.mauve  { color: #6b4a7a; }
+
+  .proj-status {
+    font-family: var(--mono);
+    font-size: 0.58rem;
+    padding: 1px 5px;
+    border-radius: 2px;
+    background: #e6f4e6;
+    color: #2d6a2d;
+    white-space: nowrap;
+    font-weight: 500;
+  }
+
+  .proj-status.review {
+    background: #fef3e2;
+    color: #8a5a00;
+  }
+
+  .proj-title {
+    font-family: var(--sans);
+    font-size: 0.88rem;
+    font-weight: 600;
+    color: var(--ink);
+    line-height: 1.4;
+    margin-bottom: 0.5rem;
+  }
+
+  .proj-desc {
+    font-family: var(--sans);
+    font-size: 0.78rem;
+    color: var(--ink-3);
+    line-height: 1.6;
+    margin-bottom: 0.75rem;
+  }
+
+  .proj-highlight {
+    font-family: var(--sans);
+    font-size: 0.75rem;
+    color: var(--ink-2);
+    background: var(--paper-2);
+    border-left: 2px solid var(--accent);
+    padding: 0.35rem 0.6rem;
+    border-radius: 0 4px 4px 0;
+    margin-bottom: 0.75rem;
+    font-style: italic;
+  }
+
+  .proj-highlight.orange { border-left-color: var(--accent-2); }
+  .proj-highlight.green  { border-left-color: #4a6741; }
+  .proj-highlight.mauve  { border-left-color: #6b4a7a; }
+
+  .proj-tools { display: flex; flex-wrap: wrap; gap: 0.3rem; }
+
+  .proj-tool {
+    font-family: var(--mono);
+    font-size: 0.62rem;
+    color: var(--ink-4);
+    background: var(--paper-2);
+    border: 1px solid var(--rule);
+    border-radius: 3px;
+    padding: 1px 6px;
+  }
+
+  /* ── TEACHING ── */
+  .service-list { display: flex; flex-direction: column; gap: 1.1rem; }
+
+  .service-item {
+    display: grid;
+    grid-template-columns: 80px 1fr;
+    gap: 1rem;
+    align-items: baseline;
+    padding-bottom: 1.1rem;
+    border-bottom: 1px solid var(--rule);
+  }
+
+  .service-item:last-child { border-bottom: none; padding-bottom: 0; }
+
+  .service-period {
+    font-family: var(--mono);
+    font-size: 0.67rem;
+    color: var(--ink-4);
+    line-height: 1.5;
+  }
+
+  .service-body { }
+
+  .service-title {
+    font-family: var(--sans);
+    font-size: 0.88rem;
+    font-weight: 600;
+    color: var(--ink);
+    margin-bottom: 0.2rem;
+  }
+
+  .service-desc {
+    font-family: var(--sans);
+    font-size: 0.8rem;
+    color: var(--ink-3);
+    line-height: 1.6;
+  }
+
+  /* ── TALKS ── */
+  .talks-list { display: flex; flex-direction: column; gap: 1rem; }
+
+  .talk-item {
+    padding: 0.9rem 1rem;
+    background: var(--paper-2);
+    border-radius: 6px;
+    border: 1px solid var(--rule);
+  }
+
+  .talk-venue {
+    font-family: var(--mono);
+    font-size: 0.65rem;
+    color: var(--accent);
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    margin-bottom: 0.3rem;
+  }
+
+  .talk-title {
+    font-family: var(--sans);
+    font-size: 0.88rem;
+    font-weight: 600;
+    color: var(--ink);
+    margin-bottom: 0.2rem;
+  }
+
+  .talk-meta {
+    font-family: var(--sans);
+    font-size: 0.78rem;
+    color: var(--ink-3);
+  }
+
+  /* ── EDUCATION ── */
+  .edu-list { display: flex; flex-direction: column; gap: 1rem; }
+
+  .edu-item {
+    display: grid;
+    grid-template-columns: 80px 1fr;
+    gap: 1rem;
+    align-items: baseline;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid var(--rule);
+  }
+
+  .edu-item:last-child { border-bottom: none; padding-bottom: 0; }
+
+  .edu-year {
+    font-family: var(--mono);
+    font-size: 0.67rem;
+    color: var(--ink-4);
+  }
+
+  .edu-degree {
+    font-family: var(--sans);
+    font-size: 0.88rem;
+    font-weight: 600;
+    color: var(--ink);
+    margin-bottom: 0.15rem;
+  }
+
+  .edu-school {
+    font-family: var(--sans);
+    font-size: 0.8rem;
+    color: var(--ink-3);
+  }
+
+  .edu-note {
+    font-family: var(--mono);
+    font-size: 0.67rem;
+    color: var(--ink-4);
+    margin-top: 0.15rem;
+  }
+
+  /* ── FOOTER ── */
+  footer {
+    grid-column: 1 / -1;
+    border-top: 1px solid var(--rule);
+    padding: 1.25rem 3.5rem;
+    font-family: var(--mono);
+    font-size: 0.67rem;
+    color: var(--ink-4);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: var(--paper);
+  }
+
+  /* ── MOBILE ── */
+  @media (max-width: 768px) {
+    .site-wrapper { grid-template-columns: 1fr; }
+    .sidebar {
+      position: static;
+      height: auto;
+      flex-direction: row;
+      flex-wrap: wrap;
+      padding: 1.25rem 1.5rem;
+      border-right: none;
+      border-bottom: 1px solid var(--rule);
+    }
+    .sidebar-links { margin-top: 0; }
+    .sidebar-nav { flex-direction: row; flex-wrap: wrap; gap: 0.5rem; }
+    main { padding: 2rem 1.5rem; max-width: 100%; }
+    .research-threads { grid-template-columns: 1fr; }
+    .projects-grid { grid-template-columns: 1fr; }
+    footer { flex-direction: column; gap: 0.5rem; padding: 1rem 1.5rem; }
+    .news-item { grid-template-columns: 70px 1fr; }
+  }
+</style>
+</head>
+<body>
+
+<div class="site-wrapper">
+
+  <!-- SIDEBAR -->
+  <aside class="sidebar">
+    <div class="avatar-wrap">
+      <img class="avatar"
+           src="/pandasaunak.github.io/assets/img/profile.jpeg"
+           alt="Saunak Kumar Panda"
+           onerror="this.style.background='#ddd';this.removeAttribute('src')">
+      <div class="sidebar-name">Saunak Kumar Panda</div>
+      <div class="sidebar-role">Postdoctoral Scholar<br>C.T. Bauer College of Business<br>University of Houston</div>
+    </div>
+
+    <nav class="sidebar-nav">
+      <a href="#about">About</a>
+      <a href="#news">News</a>
+      <a href="#publications">Publications</a>
+      <a href="#projects">Projects</a>
+      <a href="#talks">Talks</a>
+      <a href="#teaching">Teaching &amp; Service</a>
+      <a href="#education">Education</a>
+    </nav>
+
+    <div class="sidebar-links">
+      <a class="sidebar-link" href="mailto:spanda@bauer.uh.edu">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m2 7 10 7 10-7"/></svg>
+        spanda@bauer.uh.edu
+      </a>
+      <a class="sidebar-link" href="https://www.linkedin.com/in/saunak-panda/" target="_blank">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="3"/><path d="M7 10v7M7 7v.01M12 17v-4a2 2 0 0 1 4 0v4M12 10v7"/></svg>
+        LinkedIn
+      </a>
+      <a class="sidebar-link" href="https://github.com/saunakp123" target="_blank">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+        GitHub
+      </a>
+      <a class="sidebar-link" href="https://scholar.google.com/citations?user=saunakp123" target="_blank">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+        Google Scholar
+      </a>
+      <a class="sidebar-link" href="https://orcid.org/0009-0009-7423-1437" target="_blank">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M8 12h8M12 8v8"/></svg>
+        ORCID
+      </a>
+      <a class="sidebar-link" href="#" target="_blank">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+        Curriculum Vitae
+      </a>
+    </div>
+  </aside>
+
+  <!-- MAIN -->
+  <main>
+
+    <!-- ABOUT -->
+    <section id="about">
+      <div class="section-label">About</div>
+
+      <p class="about-lede">
+        I am a Postdoctoral Researcher at the Human-Centered AI Institute, C.T. Bauer College of Business, University of Houston, where I work at the intersection of reinforcement learning, large language models, and human-centered AI.
+      </p>
+
+      <p class="about-body">
+        My methodological foundation is in <strong>risk-sensitive and variance-aware RL</strong> — including sample-averaged Q-learning with asymptotic inference, empirical variance penalization, and convergence guarantees for time-varying MDPs. This theoretical core informs applied systems I build: LLM-augmented pipelines for behavioral intervention and regulatory compliance, and multi-agent frameworks that study how RL agents behave strategically in markets.
+      </p>
+
+      <p class="about-body">
+        My work is motivated by settings where decisions are irreversible, stakes are high, and uncertainty is structural — manufacturing process control, financial securities regulation, and personalized behavioral therapy for children with autism.
+      </p>
+
+      <div class="research-threads">
+        <div class="thread">
+          <div class="thread-label">Thread I</div>
+          <div class="thread-title">Risk-Sensitive &amp; Variance-Aware RL</div>
+          <div class="thread-desc">Algorithms and theory for stable, interpretable policies: empirical variance penalization, sample-averaged TD, asymptotic inference for non-stationary MDPs.</div>
+        </div>
+        <div class="thread">
+          <div class="thread-label orange">Thread II</div>
+          <div class="thread-title">LLM-Augmented Agentic Systems</div>
+          <div class="thread-desc">Pipelines that combine LLM intelligence with deterministic guardrails — for compliance verification (Lean 4), ABA therapy recommendation, and human-in-the-loop adaptation.</div>
+        </div>
+        <div class="thread">
+          <div class="thread-label slate">Thread III</div>
+          <div class="thread-title">Market Design &amp; Auction Learning</div>
+          <div class="thread-desc">How RL agents behave in competitive markets: emergent overbidding, collusion-like dynamics, and continuation-value effects in repeated second-price auctions.</div>
+        </div>
+        <div class="thread">
+          <div class="thread-label mauve">Thread IV</div>
+          <div class="thread-title">Resource Allocation &amp; Operations</div>
+          <div class="thread-desc">Deep RL for dynamic supply-demand matching, circuit optimization, and large-scale production systems with multiobjective constraints.</div>
+        </div>
+      </div>
+
+      <div class="interest-row">
+        <span class="itag">Reinforcement Learning</span>
+        <span class="itag">Risk-Sensitive RL</span>
+        <span class="itag">Statistical Inference</span>
+        <span class="itag">Optimization</span>
+        <span class="itag">LLM Systems</span>
+        <span class="itag">Sequential Decision-Making</span>
+        <span class="itag">Human-Centered AI</span>
+        <span class="itag">Market Design</span>
+        <span class="itag">Uncertainty Quantification</span>
+      </div>
+    </section>
+
+    <!-- NEWS -->
+    <section id="news">
+      <div class="section-label">News</div>
+      <div class="news-list">
+        <div class="news-item">
+          <div class="news-date">Sep 2025</div>
+          <div class="news-text">Joined the Human-Centered AI Institute, C.T. Bauer College of Business, University of Houston as Postdoctoral Scholar.</div>
+        </div>
+        <div class="news-item">
+          <div class="news-date">May 2025</div>
+          <div class="news-text"><strong>Asymptotic Analysis of Sample-averaged Q-learning</strong> accepted in <em>IEEE Transactions on Information Theory</em>. <span class="news-badge">New</span></div>
+        </div>
+        <div class="news-item">
+          <div class="news-date">Oct 2024</div>
+          <div class="news-text"><strong>Dynamic resource matching in manufacturing using deep reinforcement learning</strong> accepted in <em>European Journal of Operational Research</em>, 318(2), 408–423.</div>
+        </div>
+        <div class="news-item">
+          <div class="news-date">Aug 2024</div>
+          <div class="news-text">Presented <strong>Online Statistical Inference of Constant Sample-averaged Q-Learning</strong> at the Reinforcement Learning Safety Workshop, <em>RLC 2024</em>.</div>
+        </div>
+        <div class="news-item">
+          <div class="news-date">Aug 2025</div>
+          <div class="news-text">Completed PhD in Industrial Engineering (Operations Research) at the University of Houston. GPA: 3.96/4.0.</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PUBLICATIONS -->
+    <section id="publications">
+      <div class="section-label">Publications</div>
+      <div class="pub-list">
+
+        <div class="pub-entry">
+          <div class="pub-venue-badge">IEEE<br>TIT</div>
+          <div>
+            <div class="pub-title">Asymptotic Analysis of Sample-averaged Q-learning</div>
+            <div class="pub-authors"><strong>Saunak Kumar Panda</strong>, Yisha Xiang, Tong Tong Wu</div>
+            <div class="pub-journal">IEEE Transactions on Information Theory, 2025</div>
+            <div class="pub-abstract" id="abs1">
+              We develop a sample-averaged temporal difference algorithm with asymptotic inference guarantees for value function estimation in time-varying, non-stationary Markov Decision Processes. By bridging reinforcement learning theory, econometrics, and statistical inference, we provide the first confidence interval construction for Q-learning under distributional shift. The framework improves prediction reliability by 71% over benchmark methods.
+            </div>
+            <div class="pub-links">
+              <a class="pub-link" href="https://doi.org/10.1109/TIT.2025" target="_blank">DOI</a>
+              <button class="pub-link" onclick="toggleAbs('abs1', this)">Abstract</button>
+              <button class="pub-link">BibTeX</button>
+              <button class="pub-link">PDF</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="pub-entry">
+          <div class="pub-venue-badge orange">EJOR</div>
+          <div>
+            <div class="pub-title">Dynamic resource matching in manufacturing using deep reinforcement learning</div>
+            <div class="pub-authors"><strong>Saunak Kumar Panda</strong>, Ruiqi Liu, Yisha Xiang</div>
+            <div class="pub-journal">European Journal of Operational Research, 318(2), 408–423, 2024</div>
+            <div class="pub-abstract" id="abs2">
+              We develop a novel deep RL policy for supply-demand resource matching in large-scale dynamic manufacturing environments. Our approach achieves a 63% improvement in resource allocation performance and 20% reduction in computational time relative to benchmark methods (Gurobi, CPLEX) across varying system scales and demand volatility regimes.
+            </div>
+            <div class="pub-links">
+              <a class="pub-link" href="https://doi.org/10.1016/j.ejor.2024.05.027" target="_blank">DOI</a>
+              <button class="pub-link" onclick="toggleAbs('abs2', this)">Abstract</button>
+              <button class="pub-link">BibTeX</button>
+              <button class="pub-link">PDF</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="pub-entry">
+          <div class="pub-venue-badge gray">Under<br>Review</div>
+          <div>
+            <div class="pub-title">Empirical Variance Penalized Risk-Sensitive Reinforcement Learning</div>
+            <div class="pub-authors"><strong>Saunak Kumar Panda</strong>, Yisha Xiang</div>
+            <div class="pub-journal">Under review — NeurIPS 2025</div>
+            <div class="pub-abstract" id="abs3">
+              We propose VPAC-RS, a variance-penalized actor-critic algorithm that uses empirical variance-based regularization to penalize policy instability directly during training. Applied to a High-Temperature Superconductor manufacturing case study (58,240 real sensor measurements, 970-minute production run), the framework achieves up to 83% variance reduction while maintaining output quality under hard safety constraints. The reward structure explicitly penalizes abrupt control changes, addressing a key challenge in safety-critical industrial deployment.
+            </div>
+            <div class="pub-links">
+              <button class="pub-link" onclick="toggleAbs('abs3', this)">Abstract</button>
+              <button class="pub-link">Preprint</button>
+              <button class="pub-link">BibTeX</button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects">
+      <div class="section-label">Projects</div>
+      <div class="projects-grid">
+
+        <div class="proj-card orange">
+          <div class="proj-header">
+            <div class="proj-type orange">LLM · Formal Methods</div>
+            <div class="proj-status">Active</div>
+          </div>
+          <div class="proj-title">AI Compliance: LLM-Assisted Regulatory Verification</div>
+          <div class="proj-desc">
+            Translating financial regulatory text into machine-verifiable formal rules using a hybrid LLM + deterministic pipeline. Targets SEBI ICDR regulations and corporate prospectus filings (Red Herring Prospectuses).
+          </div>
+          <div class="proj-highlight orange">
+            Key design principle: evidence-first schema reconciliation — LLM extracts, deterministic overrides enforce type safety when evidence is sparse, preventing hallucination in compliance-critical contexts.
+          </div>
+          <div class="proj-desc">
+            Pipeline stages: (1) rule extraction from regulatory documents, (2) evidence-anchored issuer schema construction from prospectuses, (3) LLM-judge type reconciliation with deterministic fallbacks, (4) Lean 4 formal verification output for automated compliance checking.
+          </div>
+          <div class="proj-tools">
+            <span class="proj-tool">Python</span>
+            <span class="proj-tool">LangChain</span>
+            <span class="proj-tool">Lean 4</span>
+            <span class="proj-tool">LLM (GPT-4)</span>
+            <span class="proj-tool">PDF Parsing</span>
+          </div>
+        </div>
+
+        <div class="proj-card">
+          <div class="proj-header">
+            <div class="proj-type">Human-Centered AI</div>
+            <div class="proj-status">Active</div>
+          </div>
+          <div class="proj-title">Personalized ABA Therapy via RL + LLM</div>
+          <div class="proj-desc">
+            LLM-augmented reinforcement learning framework for personalized Applied Behavior Analysis (ABA) therapy recommendations for children with Autism Spectrum Disorder (ASD).
+          </div>
+          <div class="proj-highlight">
+            Integrates multimodal behavioral assessments (ABAS-3, VB-MAPP, SRS-2) as interpretable feature representations aligned with practitioner expertise. Uses GLM-UCB contextual bandit for goal recommendation under sparse feedback.
+          </div>
+          <div class="proj-desc">
+            Agentic framework with human-in-the-loop feedback from ABA therapists. LLM encodes domain knowledge; RL policy adapts intervention selection over time based on child progress signals.
+          </div>
+          <div class="proj-tools">
+            <span class="proj-tool">PyTorch</span>
+            <span class="proj-tool">LangChain</span>
+            <span class="proj-tool">GLM-UCB</span>
+            <span class="proj-tool">RL</span>
+            <span class="proj-tool">Python</span>
+          </div>
+        </div>
+
+        <div class="proj-card mauve">
+          <div class="proj-header">
+            <div class="proj-type mauve">Market Design · AI Safety</div>
+            <div class="proj-status">Active</div>
+          </div>
+          <div class="proj-title">AI Bidding &amp; Emergent Collusion in Repeated Auctions</div>
+          <div class="proj-desc">
+            Investigates strategic behavior of deep RL agents (DQN) in second-price procurement auctions under repeated interaction. Demonstrates that RL-based bidders systematically overbid and exhibit collusion-like dynamics not encoded in their reward functions.
+          </div>
+          <div class="proj-highlight mauve">
+            Key finding: continuation-value effects drive emergent coordination between agents — a concerning result for AI deployment in competitive market settings.
+          </div>
+          <div class="proj-desc">
+            Implications for mechanism design: standard auction formats may not be strategy-proof when bidders are RL agents. Connects to AI safety questions around multi-agent alignment in economic systems.
+          </div>
+          <div class="proj-tools">
+            <span class="proj-tool">DQN</span>
+            <span class="proj-tool">PyTorch</span>
+            <span class="proj-tool">Multi-Agent RL</span>
+            <span class="proj-tool">Game Theory</span>
+          </div>
+        </div>
+
+        <div class="proj-card">
+          <div class="proj-header">
+            <div class="proj-type">Theory · Statistics</div>
+            <span></span>
+          </div>
+          <div class="proj-title">Variance-Aware Q-learning &amp; Asymptotic Inference</div>
+          <div class="proj-desc">
+            Sample-averaged Q-learning with asymptotic inference guarantees for time-varying, non-stationary environments. First confidence interval construction for Q-learning under distributional shift, bridging RL theory and econometrics.
+          </div>
+          <div class="proj-highlight">
+            71% improvement in prediction reliability over benchmark methods. Presented at RLC 2024 (Reinforcement Learning Safety Workshop). Published in IEEE Transactions on Information Theory, 2025.
+          </div>
+          <div class="proj-tools">
+            <span class="proj-tool">PyTorch</span>
+            <span class="proj-tool">NumPy</span>
+            <span class="proj-tool">OpenAI Gym</span>
+            <span class="proj-tool">Python</span>
+          </div>
+        </div>
+
+        <div class="proj-card green">
+          <div class="proj-header">
+            <div class="proj-type green">Risk-Sensitive RL</div>
+            <div class="proj-status review">Under Review</div>
+          </div>
+          <div class="proj-title">VPAC-RS: Empirical Variance-Penalized Actor-Critic</div>
+          <div class="proj-desc">
+            Novel variance-penalized actor-critic framework for safety-critical industrial control. Penalizes policy instability via empirical variance regularization during training, enabling robust deployment without post-hoc safety filters.
+          </div>
+          <div class="proj-highlight green">
+            Case study: HTS manufacturing process control (58,240 sensor measurements). 83% variance reduction from ~3,000 to ~500, maintaining output quality under hard safety constraints.
+          </div>
+          <div class="proj-tools">
+            <span class="proj-tool">PyTorch</span>
+            <span class="proj-tool">OpenAI Gym</span>
+            <span class="proj-tool">DDPG</span>
+            <span class="proj-tool">Actor-Critic</span>
+          </div>
+        </div>
+
+        <div class="proj-card">
+          <div class="proj-header">
+            <div class="proj-type">Deep RL · Operations</div>
+            <span></span>
+          </div>
+          <div class="proj-title">Dynamic Resource Matching in Manufacturing</div>
+          <div class="proj-desc">
+            Deep RL policy for large-scale supply-demand resource matching in dynamic manufacturing environments. Handles non-stationary demand, stochastic arrivals, and large combinatorial action spaces where classical solvers fail to scale.
+          </div>
+          <div class="proj-highlight">
+            63% improvement in allocation performance; 20% reduction in compute time vs. Gurobi and CPLEX baselines. Published in EJOR 2024.
+          </div>
+          <div class="proj-tools">
+            <span class="proj-tool">TensorFlow</span>
+            <span class="proj-tool">PyTorch</span>
+            <span class="proj-tool">Gurobi</span>
+            <span class="proj-tool">CPLEX</span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- TALKS -->
+    <section id="talks">
+      <div class="section-label">Selected Talks &amp; Presentations</div>
+      <div class="talks-list">
+        <div class="talk-item">
+          <div class="talk-venue">RLC 2024 · Reinforcement Learning Safety Workshop</div>
+          <div class="talk-title">Online Statistical Inference of Constant Sample-averaged Q-Learning</div>
+          <div class="talk-meta">Reinforcement Learning Conference, August 2024</div>
+        </div>
+        <div class="talk-item">
+          <div class="talk-venue">INFORMS Annual Meeting</div>
+          <div class="talk-title">Empirical Variance Penalized Risk-Sensitive Reinforcement Learning for Industrial Control</div>
+          <div class="talk-meta">Institute for Operations Research and the Management Sciences, 2024</div>
+        </div>
+        <div class="talk-item">
+          <div class="talk-venue">IISE Annual Conference</div>
+          <div class="talk-title">Deep RL for Dynamic Supply-Demand Resource Matching in Manufacturing Systems</div>
+          <div class="talk-meta">Institute of Industrial and Systems Engineers, 2023</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TEACHING & SERVICE -->
+    <section id="teaching">
+      <div class="section-label">Teaching &amp; Service</div>
+      <div class="service-list">
+
+        <div class="service-item">
+          <div class="service-period">Aug 2022–<br>Present</div>
+          <div class="service-body">
+            <div class="service-title">President, INFORMS Student Chapter — University of Houston</div>
+            <div class="service-desc">Lead a chapter of 20+ members advancing operations research through academic and industry engagement. Organize seminars, weekly research meetings, and community events. Coordinate speaker series connecting students with OR practitioners.</div>
+          </div>
+        </div>
+
+        <div class="service-item">
+          <div class="service-period">Aug 2022–<br>May 2024</div>
+          <div class="service-body">
+            <div class="service-title">Student Board Member, IISE QCRE Division</div>
+            <div class="service-desc">Edited and published the quarterly newsletter for the Quality Control and Reliability Engineering division. Managed content pipeline, event coverage, and member communications.</div>
+          </div>
+        </div>
+
+        <div class="service-item">
+          <div class="service-period">2022–<br>Present</div>
+          <div class="service-body">
+            <div class="service-title">Reviewer</div>
+            <div class="service-desc">Ad hoc reviewer for RL safety workshops, operations research venues, and IEEE transactions in information theory and systems.</div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- EDUCATION -->
+    <section id="education">
+      <div class="section-label">Education</div>
+      <div class="edu-list">
+
+        <div class="edu-item">
+          <div class="edu-year">2025</div>
+          <div>
+            <div class="edu-degree">PhD, Industrial Engineering</div>
+            <div class="edu-school">University of Houston</div>
+            <div class="edu-note">Specialization: Operations Research · GPA: 3.96/4.0</div>
+          </div>
+        </div>
+
+        <div class="edu-item">
+          <div class="edu-year">2020</div>
+          <div>
+            <div class="edu-degree">MS, Mechanical Engineering</div>
+            <div class="edu-school">University of Washington</div>
+            <div class="edu-note">Specialization: Robotics</div>
+          </div>
+        </div>
+
+        <div class="edu-item">
+          <div class="edu-year">2018</div>
+          <div>
+            <div class="edu-degree">BE, Mechanical Engineering</div>
+            <div class="edu-school">PES Institute of Technology, Bangalore</div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+</div>
+
+<footer>
+  <span>Saunak Kumar Panda · University of Houston · 2025</span>
+  <span>spanda@bauer.uh.edu</span>
+</footer>
+
+<script>
+  function toggleAbs(id, btn) {
+    const el = document.getElementById(id);
+    el.classList.toggle('open');
+    btn.textContent = el.classList.contains('open') ? 'Hide' : 'Abstract';
+  }
+</script>
+
+</body>
+</html>
