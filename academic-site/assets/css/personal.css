@@ -27,3 +27,9 @@ a:focus-visible,summary:focus-visible{outline:3px solid #ba6a23;outline-offset:4
 
 .course-list{padding-left:1.25rem;margin:0}.course-list>li{padding-left:.2rem;margin-bottom:2rem}.course-list h3{font-size:1.05rem;line-height:1.4;margin:0 0 .65rem}.course-list ul{padding-left:1.15rem}.course-list ul li{margin-bottom:.6rem;font-size:.94rem;line-height:1.7}.course-meta{color:var(--profile-muted)}
 body,.page__content{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Helvetica Neue",Arial,sans-serif;font-size:18px;line-height:1.5}.page__title{font-family:inherit;font-size:28px;font-weight:700;line-height:1.2}.page__content h2{font-size:23px;line-height:1.25}.page__content h3,.publication h4,.course-list h3{font-size:18px;line-height:1.35}.page__content .research-group-heading{font-size:21px}.authors,.venue,.role,.date,.course-meta,.pub-type,.proposal-status{font-size:15px}.course-list ul li,.abstract,.paper-links,.professional-links,summary{font-size:16px}.research-overview h2{font-size:21px}.entry{grid-template-columns:135px minmax(0,1fr)}.author__urls .ai{font-size:1.1em;display:inline-block;width:1.4em;text-align:center}.page__content h2[id]{scroll-margin-top:90px}@media(max-width:600px){.entry{grid-template-columns:1fr;gap:4px}.page__content{font-size:17px}.page__title{font-size:26px}}
+
+/* Non-clickable publication and proposal labels */
+.pub-type,
+.proposal-status {
+  color: var(--profile-muted);
+}
