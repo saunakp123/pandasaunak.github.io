@@ -1,0 +1,72 @@
+{
+  "locale": "en-US",
+  "site_theme": "default",
+  "title": "Saunak Kumar Panda",
+  "name": "Saunak Kumar Panda",
+  "title_separator": "|",
+  "description": "Reinforcement learning, statistical inference, and decision-making under uncertainty.",
+  "url": "https://saunakp123.github.io",
+  "baseurl": "/pandasaunak.github.io",
+  "repository": "saunakp123/pandasaunak.github.io",
+  "author": {
+    "name": "Saunak Kumar Panda",
+    "avatar": "profile.jpeg",
+    "bio": "Postdoctoral Scholar, Human-Centered AI Institute",
+    "location": "Houston, TX",
+    "employer": "University of Houston",
+    "email": "spanda@bauer.uh.edu",
+    "googlescholar": "https://scholar.google.com/citations?user=Ldiyc0IAAAAJ&hl=en",
+    "github": "saunakp123",
+    "linkedin": "saunak-kumar-panda",
+    "orcid": "https://orcid.org/0009-0008-2399-2387"
+  },
+  "include": [
+    "_pages"
+  ],
+  "exclude": [
+    "Gemfile",
+    "Gemfile.lock",
+    "README.md",
+    "LICENSE",
+    "vendor",
+    "node_modules"
+  ],
+  "markdown": "kramdown",
+  "highlighter": "rouge",
+  "kramdown": {
+    "input": "GFM",
+    "auto_ids": true
+  },
+  "sass": {
+    "sass_dir": "_sass",
+    "style": "compressed"
+  },
+  "timezone": "America/Chicago",
+  "plugins": [
+    "jekyll-feed",
+    "jekyll-sitemap",
+    "jekyll-redirect-from"
+  ],
+  "defaults": [
+    {
+      "scope": {
+        "path": "",
+        "type": "pages"
+      },
+      "values": {
+        "layout": "single",
+        "author_profile": true
+      }
+    }
+  ],
+  "comments": {
+    "provider": false
+  },
+  "analytics": {
+    "provider": false
+  },
+  "atom_feed": {
+    "hide": true
+  },
+  "breadcrumbs": false
+}
