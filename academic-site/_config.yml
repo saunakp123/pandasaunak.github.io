@@ -18,8 +18,7 @@
     "googlescholar": "https://scholar.google.com/citations?user=Ldiyc0IAAAAJ&hl=en",
     "github": "saunakp123",
     "linkedin": "saunak-kumar-panda",
-    "orcid": "https://orcid.org/0009-0008-2399-2387",
-    "google_site_verification": "M_7SKuvofikMYIjfHzvoQ1fbc2M8DTTBNCZ5xrK4VxA"
+    "orcid": "https://orcid.org/0009-0008-2399-2387"
   },
   "include": [
     "_pages"
@@ -70,4 +69,5 @@
     "hide": true
   },
   "breadcrumbs": false
+  "google_site_verification": "M_7SKuvofikMYIjfHzvoQ1fbc2M8DTTBNCZ5xrK4VxA"
 }
